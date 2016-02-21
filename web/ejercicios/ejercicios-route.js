@@ -15,22 +15,23 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: "GetController"
         });
 //
-//
-//        $routeProvider.when('/insert/', {
-//            templateUrl: "entidadbancaria/entidadbancaria-detail.html",
-//            controller: "InsertController"
-//        });
-//
-//        $routeProvider.when('/delete/:idEjercicio', {
-//            templateUrl: "entidadbancaria/entidadbancaria-detail.html",
-//            controller: "DeleteController"
-//        });
-//
 
-        $routeProvider.when('/update/', {
-            templateUrl: "entidadbancaria/entidadbancaria-detail.html",
+        $routeProvider.when('/insert/', {
+            templateUrl: "ejercicios/ejercicios-insert.html",
+            controller: "InsertController"
+        });
+
+        $routeProvider.when('/delete/:idEjercicio', {
+            templateUrl: "ejercicios/ejercicios-delete.html",
+            controller: "DeleteController"
+        });
+
+
+        $routeProvider.when('/update/:idEjercicio', {
+            templateUrl: "ejercicios/ejercicios-update.html",
             controller: "UpdateController"
         });
+        
         $routeProvider.when('/admin/', {
             templateUrl: "ejercicios/ejercicios-admin.html",
             controller: "ListController"

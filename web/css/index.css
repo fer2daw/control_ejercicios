@@ -125,3 +125,15 @@ nav .login{
 .datosEjercicio{
     font-size: 22px;
 }
+
+.formularioUpdate{
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.ng-invalid {
+  border-color: red;
+}
+.validacion {
+  color: red;
+}
