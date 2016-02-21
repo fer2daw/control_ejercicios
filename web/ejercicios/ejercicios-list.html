@@ -1,0 +1,22 @@
+<div ng-controller="ListController">
+    <input type="text" ng-model="filtroCategoria" placeholder="filtrar por...">
+    <input type="text" ng-model="buscador" placeholder="buscador">
+    
+    <table class="table table-bordered table-striped table-hover table-responsive">
+        <thead class="thead-inverse">
+            <tr>
+                <td>Ejercicio</td>
+                <td>Categoría</td>
+                <td>Fecha</td>
+                <td>Ver</td>
+        </thead>
+        <tr ng-repeat="ejercicio in ejercicios | filter:buscador | orderBy:filtroCategoria" class="clickable-row">
+            <td>{{ejercicio.nombreEjercicio}}</td>
+            <td>{{ejercicio.categoriaEjercicio}}</td>
+            <td>{{ejercicio.fechaEjercicio | date:"longDate"}}</td>
+            <td><a href="#/get/{{ejercicio.idEjercicio}}"><button class="btn btn-primary">Ver Ejercicio </button></a></td>
+        </tr>
+    </table>
+</div>
+
+
