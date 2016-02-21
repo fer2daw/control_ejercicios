@@ -26,10 +26,14 @@ app.config(['$routeProvider', function ($routeProvider) {
 //            controller: "DeleteController"
 //        });
 //
-//
-//        $routeProvider.when('/update/:idEjercicio', {
-//            templateUrl: "entidadbancaria/entidadbancaria-detail.html",
-//            controller: "UpdateController"
-//        });
+
+        $routeProvider.when('/update/', {
+            templateUrl: "entidadbancaria/entidadbancaria-detail.html",
+            controller: "UpdateController"
+        });
+        $routeProvider.when('/admin/', {
+            templateUrl: "ejercicios/ejercicios-admin.html",
+            controller: "ListController"
+        });
 
     }]);

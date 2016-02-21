@@ -45,9 +45,24 @@
             <td>{{ejercicio.nombreEjercicio}}</td>
             <td>{{ejercicio.categoriaEjercicio}}</td>
             <td>{{ejercicio.fechaEjercicio| date:"longDate"}}</td>
-            <td><a href="#/get/{{ejercicio.idEjercicio}}"><button class="btn btn-primary">Ver Ejercicio </button></a></td>
+            <td><a href="#/get/{{ejercicio.idEjercicio}}"><button class="btn btn-primary">Ver</button></a></td>
+            <td><a href="#/update/{{ejercicio.idEjercicio}}"><button class="btn btn-primary">Actualizar</button></a></td>
+            <td><a href="#/delete/{{ejercicio.idEjercicio}}"><button class="btn btn-primary">Borrar</button></a></td>
         </tr>
     </table>
 </div>
 
 
+
+
+
+<form>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </fieldset>
+</form>

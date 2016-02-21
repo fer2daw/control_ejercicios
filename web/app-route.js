@@ -5,7 +5,7 @@ app.config(['$routeProvider', function ($routeProvider) {
         });
 
         $routeProvider.when('/', {
-            templateUrl: "main.html"
+            templateUrl: "ejercicios/ejercicios-list.html"
         });
         
     }]);
